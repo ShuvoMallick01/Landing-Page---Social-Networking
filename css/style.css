@@ -99,8 +99,16 @@ p {
   background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
 }
 
+.hero-area .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
+  z-index: 10;
+}
+
 .full-header {
-  padding: 15px 0;
+  padding: 8px 0;
 }
 
 .logo-menu {
@@ -167,7 +175,7 @@ hr {
 }
 /* Header CSS End */
 
-/* Banner CSS Start */
+/* ===== Banner START ===== */
 .header-banner {
 }
 
@@ -206,15 +214,23 @@ hr {
 .banner-right img {
   width: 100%;
 }
-/* Banner CSS End */
+/* ===== Banner END ===== */
 
-/* Feature 01: Whats Netboks CSS Start */
+/* ===== Whats Netboks START ===== */
 .feature-one-section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.feature-one-leftside {
+.feature-one-leftside ul li {
+  display: flex;
+  align-items: center;
+}
+
+.feature-one-leftside ul i {
+  font-size: 8px;
+  margin-right: 5px;
+  color: #217bf4;
 }
 
 .feature-one-leftside h3 {
@@ -247,10 +263,9 @@ hr {
   flex-direction: column;
   gap: 20px;
 }
+/* ===== Whats Netboks END ===== */
 
-/* Feature 01: Whats Netboks CSS End */
-
-/* Feature 02: Our Achievement START */
+/* ===== Our Achievement START ===== */
 .feature-two-achievement {
   padding-bottom: 50px;
   display: flex;
@@ -608,11 +623,9 @@ hr {
 .ft-six-card-title-des h3:hover {
   color: #217bf4;
 }
+/* ===== Our News END ===== */
 
-/* <!-- Feature 05: Our News END --> */
-
-/* <!-- Footer START --> */
-
+/* ===== Footer START ===== */
 .footer-section {
   padding-bottom: 50px;
   background-color: #2b2b39;
@@ -649,8 +662,29 @@ hr {
   padding-right: 10px;
   width: 28px;
 }
+
+.footer-bottom .site-logo {
+  width: 120px;
+}
+
+.footer-bottom .site-logo img {
+  width: 100%;
+}
+
 .footer-bottom {
   background-color: #20202d;
+}
+
+.footer-bottom .contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.footer-bottom .contents p {
+  color: #e7e7e7;
+  font-weight: 300;
 }
 
 .footer-bottom-owerinfo {
@@ -672,8 +706,9 @@ hr {
 
 .site-ownerinfo p {
   color: #e7e7e7;
+  font-weight: 300;
 }
-/* <!-- Footer END --> */
+/* ===== Footer END ===== */
 
 @media (max-width: 575.98px) {
 }
